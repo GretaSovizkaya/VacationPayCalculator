@@ -11,7 +11,7 @@ public class CalculatorService {
     private static final double AVERAGE_DAYS_IN_MONTH = 29.3;
 
     public double calculateVacationPay(double averageSalary, int vacationDays) {
-        double daily = averageSalary / 12 / AVERAGE_DAYS_IN_MONTH;
+        double daily = averageSalary / AVERAGE_DAYS_IN_MONTH;
         return round(daily * vacationDays);
     }
 
